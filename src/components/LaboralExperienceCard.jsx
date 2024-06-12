@@ -5,7 +5,7 @@ export default function LaboralExperienceCard() {
   return (
     <div className="bg-laboral-card">
       <div className="pb-5">
-        <ResponsiveTypography text="Experiencia laboral" textColor="#ffffff" textShadow xl="4rem"/>
+        <ResponsiveTypography text="Proyectos" textColor="#736385" textShadow xl="4rem"/>
       </div>
     </div>
   );

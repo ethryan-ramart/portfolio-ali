@@ -8,7 +8,7 @@ export default function AgeCard() {
   const [edad, setEdad] = useState(0);
 
   const props = useSpring({
-    number: AgeCalculator("1999-10-10"),
+    number: AgeCalculator("1999-12-21"),
     from: { number: 0 },
     config: { duration: 1000 },
     delay: 0,

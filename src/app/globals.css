@@ -27,6 +27,34 @@
   transition: background-color 0.3s ease;
 }
 
+/* .light {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background-image: url("/assets/images/light-background.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+} */
+
+/* .dark {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  background-image: url("/assets/images/dark-background.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+} */
+
 .bounce-animation {
   animation: bounceIn 1s ease-in-out;
 }
