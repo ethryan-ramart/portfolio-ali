@@ -30,9 +30,9 @@ export default function LenguajesCard() {
           <img src="assets/images/tools/Photoshop.png" alt="" />
         </div>
       </Tooltip>
-      <Tooltip title="TailWind" placement="bottom">
-        <div className=" flex felx-col items-center justify-center col-span-1 aspect-square">
-          <IconBrandTailwind strokeWidth="2px" size="70%" />
+      <Tooltip title="SketchUp" placement="bottom">
+        <div className=" flex felx-col items-center justify-center col-span-1 aspect-square p-1">
+          <img src="assets/images/tools/sketchup.png" alt="" />
         </div>
       </Tooltip>
     </div>

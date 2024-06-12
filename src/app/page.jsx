@@ -19,9 +19,12 @@ export default function Home() {
           <div className="relative col-span-3 aspect-square md:aspect-auto md:row-span-2 bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl overflow-hidden">
             <PresentationCard />
           </div>
-          <div className="flex flex-col justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm ">
-            <SwitchTheme theme={theme} />
+          <div className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#a781b7] p-4 justify-center items-center">
+            <UniversityCard />
           </div>
+          {/* <div className="flex flex-col justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm ">
+            <SwitchTheme theme={theme} />
+          </div> */}
           <div className="flex flex-col justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm p-3">
             <LenguajesCard />
           </div>
@@ -35,15 +38,13 @@ export default function Home() {
           <div className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#ff4848d3] p-4 justify-center items-center">
             <AgeCard />
           </div>
-          <a className="flex flex-col justify-end items-center relative rounded-3xl col-span-2 md:aspect-auto overflow-hidden cursor-pointer hover:scale-[103%] transition duration-500 ease-in-out bg-[url(../../public/assets/images/blueprints.jpg)] bg-cover bg-center">
+          <a className="flex flex-col justify-end items-center relative rounded-3xl col-span-2 overflow-hidden cursor-pointer hover:scale-[103%] transition duration-500 ease-in-out bg-[url(../../public/assets/images/blueprints.jpg)] bg-cover bg-center">
             <LaboralExperienceCard />
           </a>
-          {/* <div className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#a781b7] p-4  hover:scale-[103%] transition duration-500 justify-center items-center">
+          <div className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#1178ff9c] p-4  hover:scale-[103%] transition duration-500 justify-center items-center">
             <DownloadCV />
-          </div> */}
-          <div className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#a781b7] p-4 justify-center items-center">
-            <UniversityCard />
           </div>
+          
         </div>
       </div>
     </div>
