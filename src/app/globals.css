@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#body {
+  height: 100vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow: hidden scroll;
+}
+
+.light {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f0e8f7;
+  color: #6e5e82;
+  transition: background-color 0.3s ease;
+}
+
+.dark {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #120c17;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.bounce-animation {
+  animation: bounceIn 1s ease-in-out;
+}
+/* Animacion de inicio */
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(30px);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Estilo que dibuja un ovalo y gira sobre su propio eje infinitamente */
+.ola {
+  position: absolute;
+  top: 60%;
+  left: -10%;
+  width: 1100px;
+  height: 1000px;
+  background-color: rgb(253, 195, 255, 0.5);
+  border-radius: 50%;
+  animation: rotate 17s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Iconos */
+.icono {
+  font-size: 250px !important; /* Tamaño inicial del icono */
+}
+
+/* Cambia el tamaño del icono en pantallas más pequeñas */
+@media (max-width: 1030px) {
+  .icono {
+    font-size: 150px !important; 
+  }
+}
+
+/* Cambia el tamaño del icono en pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .icono {
+    font-size: 100px !important;
+  }
+}
+
+/* Noise Aniimation */
+.noise::before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: .06;  
+  z-index: 1000;
+  pointer-events: none;
+  background: url(../../public/assets/images/noise.gif)
+}
+
+/* Awake switch */
+.switch {
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 55px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    297deg,
+    rgba(70, 205, 242, 1) 0%,
+    rgba(127, 176, 249, 1) 52%,
+    rgba(231, 235, 244, 1) 82%
+  );
+  border: 3px solid white;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.1);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  top: 8px;
+  background-color: yellow;
+  transition: 0.5s;
+}
+
+.switch input {
+  display: none;
+}
+
+input:checked + .slider {
+  background: linear-gradient(
+    56deg,
+    rgba(33, 138, 167, 1) 0%,
+    rgba(45, 90, 156, 1) 52%,
+    rgba(24, 46, 97, 1) 95%
+  );
+}
+
+input:checked + .slider:before {
+  transform: translateX(47px) rotateZ(45deg);
+
+  background-color: #f1edb7;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  width: 43%;
+  height: 43%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transform: rotateZ(-45deg);
+}
+
+/* Laboral Experience card */
+.bg-laboral-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilos para el texto de la tarjeta */
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
